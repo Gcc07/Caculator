@@ -22,17 +22,17 @@ inputs."""
     
     def square_root(self, a: float) -> float:
         if a < 0:
-            return ValueError
+            raise ValueError
         else:
             return math.sqrt(a)
 
     def modulus(self, a: float, b: float) -> float: 
         if b == 0: 
-            return ZeroDivisionError
+            raise ZeroDivisionError
         else:
             return a % b
         
     def floor_divide(self, a: float, b: float) -> float: 
         if b == 0:
-            return ZeroDivisionError
+            raise ZeroDivisionError
         return math.floor(a / b)
